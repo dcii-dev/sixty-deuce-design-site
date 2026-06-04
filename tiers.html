@@ -478,6 +478,17 @@
           }
         }
 
+        const hash = window.location.hash;
+
+        if (hash) {
+          const targetTab = document.querySelector(`[id="${hash.slice(1)}"]`);
+
+          if (targetTab && targetTab.getAttribute("role") === "tab") {
+            activateTab(targetTab);
+            targetTab.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }
+
         tabs.forEach((tab) => {
           tab.addEventListener("click", () => activateTab(tab));
 
