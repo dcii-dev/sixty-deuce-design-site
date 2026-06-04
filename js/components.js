@@ -59,6 +59,75 @@
   }
 
   /**
+   * Initialises the mobile navigation toggle.
+   * Manages aria-expanded, open/close state, and focus trap via Escape key.
+   */
+  function initMobileNav() {
+    const toggle = document.querySelector(".nav-toggle");
+    const nav = document.getElementById("primary-nav");
+
+    if (!toggle || !nav) {
+      return;
+    }
+
+    /**
+     * Opens or closes the mobile nav.
+     * @param {boolean} open Whether to open (true) or close (false).
+     */
+    function setNavOpen(open) {
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute(
+        "aria-label",
+        open ? "Close navigation menu" : "Open navigation menu",
+      );
+      nav.classList.toggle("is-open", open);
+
+      if (open) {
+        const firstLink = nav.querySelector("a");
+        if (firstLink) {
+          firstLink.focus();
+        }
+      } else {
+        toggle.focus();
+      }
+    }
+
+    toggle.addEventListener("click", () => {
+      const isOpen = toggle.getAttribute("aria-expanded") === "true";
+      setNavOpen(!isOpen);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (
+        event.key === "Escape" &&
+        toggle.getAttribute("aria-expanded") === "true"
+      ) {
+        setNavOpen(false);
+      }
+    });
+
+    /* Close nav when a link is clicked (single-page nav or page change) */
+    nav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        if (window.innerWidth <= 991) {
+          setNavOpen(false);
+        }
+      });
+    });
+
+    /* Close nav if viewport resizes to desktop width */
+    window.addEventListener(
+      "resize",
+      () => {
+        if (window.innerWidth > 991) {
+          setNavOpen(false);
+        }
+      },
+      { passive: true },
+    );
+  }
+
+  /**
    * Boot: inject partials, then initialise interactive components.
    */
   async function initializeApp() {
@@ -68,6 +137,7 @@
     ]);
     markActiveLink();
     initStickyHeader();
+    initMobileNav();
   }
 
   if (document.readyState === "complete") {

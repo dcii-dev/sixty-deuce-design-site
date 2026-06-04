@@ -10,7 +10,7 @@
     <a href="index.html" class="site-header__logo" aria-label="Sixty Deuce Design - home">
       <img src="images/dcii_basic-logo_1.webp" alt="Sixty Deuce Design" width="512" height="116" class="site-header__logo-img site-header__logo-img--inverted">
     </a>
-    <nav class="site-header__nav" aria-label="Primary navigation">
+    <nav class="site-header__nav" id="primary-nav" aria-label="Primary navigation">
       <ul role="list">
         <li><a href="index.html">Home</a></li>
         <li><a href="tiers.html">Tiers &amp; Pricing</a></li>
@@ -19,5 +19,15 @@
         <li><a href="index.html#contact-form" class="btn btn--primary site-header__cta">Contact Us</a></li>
       </ul>
     </nav>
+    <button
+      class="nav-toggle"
+      aria-expanded="false"
+      aria-controls="primary-nav"
+      aria-label="Open navigation menu"
+    >
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+    </button>
   </div>
 </header>
