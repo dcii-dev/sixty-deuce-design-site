@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Sixty Deuce Design</title>
+  <meta name="description" content="Browse live demo sites from Sixty Deuce Design. See real examples of Starter, Business, and Professional tier builds across barbershops, contractors, HVAC, landscaping, and more.">
+  <meta property="og:title" content="Portfolio | Sixty Deuce Design">
+  <meta property="og:description" content="Browse live demo sites from Sixty Deuce Design. See real examples of Starter, Business, and Professional tier builds.">
+  <meta property="og:image" content="images/open-graph.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/webclip.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV MOUNT: injected by js/components.js -->
+  <div id="nav-mount"></div>
+
+  <main id="main-content">
+
+    <!-- PORTFOLIO HERO -->
+    <section class="portfolio-hero" aria-labelledby="portfolio-page-heading">
+      <div class="container">
+        <p class="portfolio-hero__eyebrow">Portfolio</p>
+        <h1 id="portfolio-page-heading" class="portfolio-hero__heading">Real Sites. Real Industries.</h1>
+        <p class="portfolio-hero__subtext">Every demo below was built to show what a real client site looks like at each tier. Browse by tier or explore them all.</p>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO FILTER + GRID -->
+    <section class="portfolio-section section" aria-label="Portfolio demos">
+      <div class="container">
+
+        <!-- FILTER BAR -->
+        <div class="portfolio-filter" role="group" aria-label="Filter by tier">
+          <button class="portfolio-filter__btn is-active" data-filter="all">All</button>
+          <button class="portfolio-filter__btn" data-filter="t1">Tier 1: Starter</button>
+          <button class="portfolio-filter__btn" data-filter="t2">Tier 2: Business</button>
+          <button class="portfolio-filter__btn" data-filter="t3">Tier 3: Professional</button>
+        </div>
+
+        <!-- PORTFOLIO GRID -->
+        <div class="portfolio-page__grid" id="portfolio-grid">
+
+          <!-- Oak and Iron Barber Co. -->
+          <article class="portfolio-page__card" data-tier="t1">
+            <a href="https://demos.sixtydeucedesign.com/t1-starter/d3-oak-and-iron-barber/oak-and-iron-barber.html" target="_blank" rel="noopener noreferrer" class="portfolio-page__card-link" aria-label="View Oak and Iron Barber Co. demo (opens in new tab)">
+              <div class="portfolio-page__card-image">
+                <img src="images/oak-iron-screenshot.png" alt="Oak and Iron Barber Co. website screenshot" loading="lazy">
+                <div class="portfolio-page__card-overlay" aria-hidden="true">
+                  <span class="material-symbols-outlined">open_in_new</span>
+                  <span>View Live Demo</span>
+                </div>
+              </div>
+            </a>
+            <div class="portfolio-page__card-info">
+              <div class="portfolio-page__card-meta">
+                <span class="portfolio-page__tier-badge portfolio-page__tier-badge--t1">Tier 1</span>
+                <span class="portfolio-page__industry">Barbershop</span>
+              </div>
+              <h2 class="portfolio-page__card-title">Oak and Iron Barber Co.</h2>
+              <p class="portfolio-page__card-desc">Single-page Starter Site for a local barbershop. Hero, services, team, and contact sections with a dark, masculine aesthetic.</p>
+              <a href="https://demos.sixtydeucedesign.com/t1-starter/d3-oak-and-iron-barber/oak-and-iron-barber.html" target="_blank" rel="noopener noreferrer" class="portfolio-page__demo-link">
+                View Demo <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Clearview Window Cleaning -->
+          <article class="portfolio-page__card" data-tier="t1">
+            <a href="https://demos.sixtydeucedesign.com/t1-starter/d4-clearview-window-cleaning/clearview-window-cleaning.html" target="_blank" rel="noopener noreferrer" class="portfolio-page__card-link" aria-label="View Clearview Window Cleaning demo (opens in new tab)">
+              <div class="portfolio-page__card-image">
+                <img src="images/clearview-window-screenshot.png" alt="Clearview Window Cleaning website screenshot" loading="lazy">
+                <div class="portfolio-page__card-overlay" aria-hidden="true">
+                  <span class="material-symbols-outlined">open_in_new</span>
+                  <span>View Live Demo</span>
+                </div>
+              </div>
+            </a>
+            <div class="portfolio-page__card-info">
+              <div class="portfolio-page__card-meta">
+                <span class="portfolio-page__tier-badge portfolio-page__tier-badge--t1">Tier 1</span>
+                <span class="portfolio-page__industry">Window Cleaning</span>
+              </div>
+              <h2 class="portfolio-page__card-title">Clearview Window Cleaning</h2>
+              <p class="portfolio-page__card-desc">Clean, light Starter Site for a residential window cleaning company. Services, coverage area, and a clear quote CTA.</p>
+              <a href="https://demos.sixtydeucedesign.com/t1-starter/d4-clearview-window-cleaning/clearview-window-cleaning.html" target="_blank" rel="noopener noreferrer" class="portfolio-page__demo-link">
+                View Demo <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Peakstone Roofing -->
+          <article class="portfolio-page__card" data-tier="t2">
+            <a href="https://demos.sixtydeucedesign.com/t2-business/d1-peakstone-roofing/peakstone-roofing.html" target="_blank" rel="noopener noreferrer" class="portfolio-page__card-link" aria-label="View Peakstone Roofing demo (opens in new tab)">
+              <div class="portfolio-page__card-image">
+                <img src="images/peakstone-screenshot.png" alt="Peakstone Roofing website screenshot" loading="lazy">
+                <div class="portfolio-page__card-overlay" aria-hidden="true">
+                  <span class="material-symbols-outlined">open_in_new</span>
+                  <span>View Live Demo</span>
+                </div>
+              </div>
+            </a>
+            <div class="portfolio-page__card-info">
+              <div class="portfolio-page__card-meta">
+                <span class="portfolio-page__tier-badge portfolio-page__tier-badge--t2">Tier 2</span>
+                <span class="portfolio-page__industry">Roofing Contractor</span>
+              </div>
+              <h2 class="portfolio-page__card-title">Peakstone Roofing</h2>
+              <p class="portfolio-page__card-desc">Multi-page Business Site for a roofing contractor. Includes About, Services, FAQ, and Contact pages with LocalBusiness schema and on-page SEO.</p>
+              <a href="https://demos.sixtydeucedesign.com/t2-business/d1-peakstone-roofing/peakstone-roofing.html" target="_blank" rel="noopener noreferrer" class="portfolio-page__demo-link">
+                View Demo <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Frostline HVAC -->
+          <article class="portfolio-page__card" data-tier="t2">
+            <a href="https://demos.sixtydeucedesign.com/t2-business/d2-frostline-hvac/frostline-hvac.html" target="_blank" rel="noopener noreferrer" class="portfolio-page__card-link" aria-label="View Frostline HVAC demo (opens in new tab)">
+              <div class="portfolio-page__card-image">
+                <img src="images/frostline-hvac.png" alt="Frostline HVAC website screenshot" loading="lazy">
+                <div class="portfolio-page__card-overlay" aria-hidden="true">
+                  <span class="material-symbols-outlined">open_in_new</span>
+                  <span>View Live Demo</span>
+                </div>
+              </div>
+            </a>
+            <div class="portfolio-page__card-info">
+              <div class="portfolio-page__card-meta">
+                <span class="portfolio-page__tier-badge portfolio-page__tier-badge--t2">Tier 2</span>
+                <span class="portfolio-page__industry">HVAC</span>
+              </div>
+              <h2 class="portfolio-page__card-title">Frostline HVAC</h2>
+              <p class="portfolio-page__card-desc">Business Site for an HVAC company. Multiple service pages, a Google Maps embed, and a contact form built for lead generation.</p>
+              <a href="https://demos.sixtydeucedesign.com/t2-business/d2-frostline-hvac/frostline-hvac.html" target="_blank" rel="noopener noreferrer" class="portfolio-page__demo-link">
+                View Demo <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Verde Valley Landscaping -->
+          <article class="portfolio-page__card" data-tier="t3">
+            <a href="https://demos.sixtydeucedesign.com/t3-professional/d5-verde-valley-landscaping/verde-valley-landscaping.html" target="_blank" rel="noopener noreferrer" class="portfolio-page__card-link" aria-label="View Verde Valley Landscaping demo (opens in new tab)">
+              <div class="portfolio-page__card-image">
+                <img src="images/verde-screenshot.png" alt="Verde Valley Landscaping website screenshot" loading="lazy">
+                <div class="portfolio-page__card-overlay" aria-hidden="true">
+                  <span class="material-symbols-outlined">open_in_new</span>
+                  <span>View Live Demo</span>
+                </div>
+              </div>
+            </a>
+            <div class="portfolio-page__card-info">
+              <div class="portfolio-page__card-meta">
+                <span class="portfolio-page__tier-badge portfolio-page__tier-badge--t3">Tier 3</span>
+                <span class="portfolio-page__industry">Landscaping</span>
+              </div>
+              <h2 class="portfolio-page__card-title">Verde Valley Landscaping</h2>
+              <p class="portfolio-page__card-desc">Professional Site with individual service pages, a project gallery, service area coverage, and GA4 plus Google Business Profile setup.</p>
+              <a href="https://demos.sixtydeucedesign.com/t3-professional/d5-verde-valley-landscaping/verde-valley-landscaping.html" target="_blank" rel="noopener noreferrer" class="portfolio-page__demo-link">
+                View Demo <span class="material-symbols-outlined" aria-hidden="true">open_in_new</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- EMPTY STATE (shown when filter returns no results) -->
+        <p class="portfolio-empty" id="portfolio-empty" hidden>No demos in this tier yet. Check back soon.</p>
+
+      </div>
+    </section>
+
+    <!-- PORTFOLIO CTA -->
+    <section class="portfolio-cta-section section" aria-label="Start a project">
+      <div class="container container--medium">
+        <div class="portfolio-cta">
+          <p class="portfolio-cta__eyebrow">Ready to Build</p>
+          <h2 class="portfolio-cta__heading">Your Site Could Be Next</h2>
+          <p class="portfolio-cta__text">Every demo here started with a conversation. Tell us about your business and we'll find the right tier, the right timeline, and the right price.</p>
+          <div class="portfolio-cta__actions">
+            <a href="index.html#contact-form" class="btn btn--primary">Start the Conversation</a>
+            <a href="tiers.html" class="btn btn--secondary">Browse Pricing Tiers</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER MOUNT: injected by js/components.js -->
+  <div id="footer-mount"></div>
+
+  <script src="js/components.js"></script>
+  <script>
+    (function () {
+      "use strict";
+
+      /**
+       * Initializes the portfolio filter buttons.
+       * Filters cards by tier using data-tier attributes.
+       */
+      function initPortfolioFilter() {
+        const filterBtns = document.querySelectorAll(".portfolio-filter__btn");
+        const cards = document.querySelectorAll(".portfolio-page__card");
+        const emptyState = document.getElementById("portfolio-empty");
+
+        if (!filterBtns.length) {
+          return;
+        }
+
+        /**
+         * Applies a filter to the portfolio grid.
+         * @param {string} filter The tier key to filter by, or 'all'.
+         */
+        function applyFilter(filter) {
+          let visibleCount = 0;
+
+          cards.forEach((card) => {
+            const matches = filter === "all" || card.dataset.tier === filter;
+
+            card.hidden = !matches;
+
+            if (matches) {
+              visibleCount++;
+            }
+          });
+
+          if (emptyState) {
+            emptyState.hidden = visibleCount > 0;
+          }
+        }
+
+        filterBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            filterBtns.forEach((b) => {
+              b.classList.remove("is-active");
+              b.setAttribute("aria-pressed", "false");
+            });
+
+            btn.classList.add("is-active");
+            btn.setAttribute("aria-pressed", "true");
+
+            applyFilter(btn.dataset.filter);
+          });
+        });
+      }
+
+      if (document.readyState === "complete") {
+        initPortfolioFilter();
+      } else {
+        window.addEventListener("load", initPortfolioFilter, { once: true });
+      }
+    })();
+  </script>
+
+</body>
+</html>
